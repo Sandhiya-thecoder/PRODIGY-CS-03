@@ -33,7 +33,7 @@ The tool checks for the following criteria:
 - At least one uppercase letter
 - At least one lowercase letter
 - At least one digit
-- At least one special character (e.g., `@`, `#`, `$`, `%`, `!`, etc.)
+- At least one special character (e.g., `@`, `#`, `*`, `%`, `!`, etc.)
 
 Based on these checks, the password is classified as:
 - **Weak**
