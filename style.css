@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  background: #f4f4f4;
+  max-width: 500px;
+  margin: auto;
+}
+
+h2 {
+  color: #333;
+}
+
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.strength {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.weak {
+  color: red;
+}
+
+.moderate {
+  color: orange;
+}
+
+.strong {
+  color: green;
+}
+
+ul {
+  list-style-type: "❌ ";
+  padding-left: 20px;
+  color: #444;
+}
+
+ul li.pass {
+  list-style-type: "✔️ ";
+  color: green;
+}

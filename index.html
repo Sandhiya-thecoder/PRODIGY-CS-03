@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Password Strength Checker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>🔐 Password Strength Checker</h2>
+  <input type="password" id="passwordInput" placeholder="Enter your password" />
+  <div id="strengthResult" class="strength"></div>
+  <ul id="feedbackList"></ul>
+
+  <script>
+    const passwordInput = document.getElementById("passwordInput");
+    const strengthResult = document.getElementById("strengthResult");
+    const feedbackList = document.getElementById("feedbackList");
+
+    passwordInput.addEventListener("input", () => {
+      const password = passwordInput.value;
+      checkPassword(password);
+    });
+
+    function checkPassword(password) {
+      let score = 0;
+      const feedback = [];
+
+      const rules = [
+        { test: password.length >= 8, message: "Use at least 8 characters." },
+        { test: /[a-z]/.test(password), message: "Add lowercase letters." },
+        { test: /[A-Z]/.test(password), message: "Add uppercase letters." },
+        { test: /\d/.test(password), message: "Include numbers." },
+        { test: /[!@#$%^&*(),.?\":{}|<>]/.test(password), message: "Use special characters (e.g., !, @, #)." }
+      ];
+
+      feedbackList.innerHTML = "";
+
+      rules.forEach(rule => {
+        const li = document.createElement("li");
+        li.textContent = rule.message;
+        if (rule.test) {
+          score++;
+          li.classList.add("pass");
+        }
+        feedbackList.appendChild(li);
+      });
+
+      if (score === 5) {
+        strengthResult.textContent = "🔒 Strong";
+        strengthResult.className = "strength strong";
+      } else if (score >= 3) {
+        strengthResult.textContent = "⚠️ Moderate";
+        strengthResult.className = "strength moderate";
+      } else {
+        strengthResult.textContent = "❌ Weak";
+        strengthResult.className = "strength weak";
+      }
+    }
+  </script>
+</body>
+</html>
