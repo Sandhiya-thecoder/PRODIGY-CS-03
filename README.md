@@ -1,44 +1,49 @@
-# PRODIGY-CS-03
-# 🔐 Password Complexity Checker  
+<h1 align="center">🔐 Password Complexity Checker</h1>
 
-A versatile tool developed using **Python** and **HTML/CSS/JavaScript** that evaluates the strength of user passwords based on common security standards. It checks for length, use of uppercase and lowercase letters, numbers, and special characters, providing instant feedback to improve password security.
+<p align="center">
+A simple and effective <b>Python-based tool</b> that analyzes the strength of user passwords based on various security parameters.  
+It helps users create strong and secure passwords by identifying weak ones and providing instant feedback. 💪
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.x-blue?logo=python" alt="Python">
+  <img src="https://img.shields.io/badge/Category-CyberSecurity-yellow" alt="Cybersecurity">
+  <img src="https://img.shields.io/badge/Level-Beginner-brightgreen" alt="Beginner Level">
+  <img src="https://img.shields.io/badge/Status-Completed-success" alt="Completed">
+</p>
+
+---
+
+## 🧠 Overview
+
+The **Password Complexity Checker** evaluates a given password based on:
+- Length  
+- Use of uppercase and lowercase letters  
+- Inclusion of numbers and special characters  
+
+It then categorizes the password as **Weak**, **Moderate**, or **Strong**, encouraging better password hygiene and security awareness. 🔐
+
+---
 
 ## 🚀 Features
 
-- ✅ Real-time password strength evaluation (Web version)
-- 🧠 Intelligent complexity checks (Length, Case, Digits, Symbols)
-- 🔁 Feedback-based suggestions for improvement
-- 🌐 Web version (HTML/CSS/JS) for interactive experience
-- 🐍 Python version for terminal-based validation
-- 📱 Responsive UI for mobile and desktop (Web version)
-- 🔒 Promotes secure password habits
+- 🧮 Checks password strength using multiple criteria  
+- ⚡ Instant feedback on password complexity  
+- 💡 Suggests how to improve weak passwords  
+- 🧑‍💻 Beginner-friendly and easy-to-understand Python code  
 
+---
 
 ## 🛠️ Technologies Used
 
-### Web Version
-- **HTML** – Structure
-- **CSS** – Styling and responsive design
+- **Language:** Python 3  
+- **Libraries:** None (uses only built-in Python modules)
 
-### Python Version
-- **Python 3** – CLI-based password checker
-- **re** module – For pattern matching and validation
+---
 
+## ▶️ How to Run
 
-## 🔎 How It Works
-
-The tool checks for the following criteria:
-
-- Minimum of 8 characters
-- At least one uppercase letter
-- At least one lowercase letter
-- At least one digit
-- At least one special character (e.g., `@`, `#`, `*`, `%`, `!`, etc.)
-
-Based on these checks, the password is classified as:
-- **Weak**
-- **Moderate**
-- **Strong**
-- **Very Strong**
-
-
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/Password-Complexity-Checker.git
+   cd Password-Complexity-Checker
